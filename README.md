@@ -34,6 +34,13 @@ Clique no botão “+” e insira os detalhes de conexão do seu servidor Redis 
 ![image](https://github.com/leandroloffeu/chata-redis/assets/112645165/36a0e249-8904-4f09-82d5-14713a1a7d9f)
 
 
+Iniciar o Servidor Redis: sudo service redis-server start
+
+Verificar a Instalação: redis-cli
+No prompt do Redis, digite ping. Se receber “PONG” como resposta, o Redis está funcionando corretamente.
+
+
+
 Comando EXISTS: verifica se uma chave específica existe no Redis. Ele retorna 1 se a chave existir e 0 caso contrário.
 
 redis-cli> EXISTS key_name
