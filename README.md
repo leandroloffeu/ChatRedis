@@ -7,6 +7,7 @@ link: https://medium.com/@nelson.miranda_40644/tutorial-como-instalar-e-usar-o-r
 Instalar bibliotecas:
 
 python-redis: pip install python-redis
+Instale redis: pip install redis
 
 Importe redis
 
