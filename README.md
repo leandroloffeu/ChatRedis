@@ -1,5 +1,9 @@
 # chat-redis
 
+
+Este tutorial fornecerá um passo a passo sobre como instalar e começar a usar o Redis no Windows, utilizando o Subsistema Windows para Linux (WSL2), uma vez que o Redis não possui uma versão oficial para Windows.
+link: https://medium.com/@nelson.miranda_40644/tutorial-como-instalar-e-usar-o-redis-no-windows-0458407bead8
+
 Instalar bibliotecas:
 
 python-redis: pip install python-redis
