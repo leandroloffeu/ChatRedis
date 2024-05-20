@@ -37,6 +37,7 @@ Clique no botão “+” e insira os detalhes de conexão do seu servidor Redis 
 Iniciar o Servidor Redis: sudo service redis-server start
 
 Verificar a Instalação: redis-cli
+
 No prompt do Redis, digite ping. Se receber “PONG” como resposta, o Redis está funcionando corretamente.
 
 
