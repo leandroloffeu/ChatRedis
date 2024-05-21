@@ -12,16 +12,20 @@ Instale redis: pip install redis
 
 Importe redis
 
-![image](https://github.com/leandroloffeu/chata-redis/assets/112645165/2c6778fb-8107-41e9-9239-da7d72cb6d20)
+![image](https://github.com/leandroloffeu/ChatRedis/assets/112645165/84794aa9-9307-455d-9376-480107b2dbfe)
+
+
 
 Criar uma instância:
 
-![image](https://github.com/leandroloffeu/chata-redis/assets/112645165/45ea00ed-ebd2-4651-93d1-4bbfca1477e8)
+![image](https://github.com/leandroloffeu/ChatRedis/assets/112645165/26694f11-6b29-47b1-8668-20cec4023bc4)
+
 
 
 criar as operações do Redis no endpoint WebSocket:
 
-![image](https://github.com/leandroloffeu/chata-redis/assets/112645165/bc0cfa80-f9bb-4860-a634-69ac875fbc16)
+![image](https://github.com/leandroloffeu/ChatRedis/assets/112645165/c6d71fe1-2323-4b8f-97d4-10c94e0a3d4c)
+
 
 
 Instalar a extensão Redis no VS Code:
