@@ -4,13 +4,16 @@ from fastapi.staticfiles import StaticFiles
 import redis
 
 
+app = FastAPI()
 
-app = FastAPI()
-with open("../chat/index.html","r") as file: html = file.read()
-app = FastAPI()
+# Carrega o conteúdo do HTML
+with open("../chat/index.html", "r") as file:
+    html = file.read()
+
+# Monta o diretório estático para arquivos CSS e JS
 app.mount("/static", StaticFiles(directory="static"), name="static")
-app = FastAPI()
-redis_client = redis.Redis(host="localhost", port=6379)  
+
+redis_client = redis.Redis(host="localhost", port=6379)
 
 
 
@@ -48,6 +51,8 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
     try:
         while True:
             data = await websocket.receive_text()
+            await manager.send_personal_message(f"VOCÊ ESCREVEU:  {data}", websocket)
+            await manager.broadcast(f"USUARIO:  #{client_id} DISSE:  {data}")
 
             # Save message to Redis with a key (e.g., user ID or timestamp)
             redis_client.set(f"chat:{client_id}", data)
