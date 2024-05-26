@@ -24,7 +24,8 @@ Criar uma instância:
 
 criar as operações do Redis no endpoint WebSocket:
 
-![image](https://github.com/leandroloffeu/ChatRedis/assets/112645165/c6d71fe1-2323-4b8f-97d4-10c94e0a3d4c)
+
+![image](https://github.com/leandroloffeu/ChatRedis/assets/112645165/8ad5b3fb-ae2b-4add-a2a4-1b0a3526911d)
 
 
 
