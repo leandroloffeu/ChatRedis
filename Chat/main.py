@@ -54,10 +54,10 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
             await manager.send_personal_message(f"VOCÊ ESCREVEU:  {data}", websocket)
             await manager.broadcast(f"USUARIO:  #{client_id} DISSE:  {data}")
 
-            # Save message to Redis with a key (e.g., user ID or timestamp)
+            # Salvar mensagem no Redis com uma chave
             redis_client.set(f"chat:{client_id}", data)
 
-            # ... other message processing ...
+            # outro processamento de mensagens
     except WebSocketDisconnect:
         manager.disconnect(websocket)
         await manager.broadcast(f"USUARIO #{client_id} SAIU DA SALA.")
